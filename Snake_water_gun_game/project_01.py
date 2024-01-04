@@ -22,7 +22,7 @@ if random_No == 1:
     computer = 's'
 elif random_No == 2:
     computer = 'w'
-elif random_No == 1:
+elif random_No == 3:
     computer = 'g'
 
 chance = input("your turn: please select from snake(s), water(w), and gun(g)")
