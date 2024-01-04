@@ -4,9 +4,9 @@ def game(chance, computer):
     if chance == computer:
         return None
     elif computer == 's' and chance == 'g':
-        return False
-    elif computer == 's' and chance == 'w':
         return True
+    elif computer == 's' and chance == 'w':
+        return False
     elif computer == 'w' and chance == 'g':
         return False
     elif computer == 'w' and chance == 's':
@@ -28,7 +28,7 @@ elif random_No == 3:
 chance = input("your turn: please select from snake(s), water(w), and gun(g)")
 
 print(f"You choose {chance}")
-print(f"You choose {computer}")
+print(f"Computer choose {computer}")
 
 a = game(chance, computer)
 if a == None:
