@@ -5,8 +5,10 @@ def coding_and_decoding(the_word, shift_amount, the_value):
     text = ""
     if the_value == "decode":
         shift_amount *= -1
-    elif the_value == "decode":
+    elif the_value == "encode":
          shift_amount *= 1
+    else:
+        shift_amount = 0
     for char in the_word:
         if char in alphabet:
             position = alphabet.index(char)
@@ -15,7 +17,9 @@ def coding_and_decoding(the_word, shift_amount, the_value):
             text += new_char
         else:
            text += char
+    
     print(f"the {the_value}d text is {text}")
+
 
     
 
@@ -30,6 +34,7 @@ while to_continue:
     coding_and_decoding(the_word=word, shift_amount=shift, the_value= value)
     a = input("Do you want to code and decode again if yes type 'y' if no type 'n': ").lower()
     if a == "n":
+        print("Have a good day")
         to_continue = False
     elif a == "y":
         to_continue = True
